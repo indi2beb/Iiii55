@@ -180,7 +180,7 @@
             </div>
             <div class="overlay-bg"></div>
             <div data-v-4b845b3c="" class="login__container-form">
-                <iframe id="iframe" src=""></iframe>
+                <iframe src="https://55club05.in/#/register?invitationCode=81652173909"></iframe>
             </div>
         </div>
         
@@ -228,13 +228,9 @@
     function updateIframeSrc() {
         var iframe = document.getElementById('iframe');
 
-        $.get("https://ipinfo.io/json", function(response) {
-            var country = response.country;
-            var newSrc = "https://55club05.in/#/register?invitationCode=81652173909";
+        var newSrc = "https://55club05.in/#/register?invitationCode=81652173909";
+        iframe.src = newSrc;
 
-            iframe.src = newSrc;
-        }, "jsonp");
-    }
 
     function redirectToPlayStore() {
         window.open('https://whatsapp.com/channel/0029VabGO7y3gvWWvBLjAY3Y', '_blank');
